@@ -7,7 +7,7 @@ func main() {
 		client := session.Client()
 		client.Answer()
 		client.StreamFile("tt-monkeys", "#")
-		client.Exec("Dial", "PJSIP/PHONE_B")
+		client.Exec("Dial", "PJSIP/PHONE_A") // PHONE_A must be defined in pjsip.confgit
 		client.SetVariable("AGISTATUS", "SUCCESS")
 		client.Hangup()
 	})
