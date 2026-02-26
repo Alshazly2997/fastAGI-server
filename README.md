@@ -34,7 +34,5 @@ A high-performance FastAGI (Asterisk Gateway Interface) server built with Go. Th
     ```Ini, TOML
     [default]
     exten => 100,1,AGI(agi://localhost:4573)
-
-    exten => 102,1,Dial(PJSIP/PHONE_B)
  
 Note: Replace localhost with the IP address of your Go server if it is running on a different machine.
